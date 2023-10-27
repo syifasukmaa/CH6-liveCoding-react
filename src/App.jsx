@@ -18,7 +18,7 @@ function App() {
     setUserInput((existingUserInput) => {
       return {
         ...existingUserInput,
-        [inputKey]: +newValue,
+        [inputKey]: newValue === '' ? newValue : +newValue,
       };
     });
   }
